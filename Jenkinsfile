@@ -27,7 +27,7 @@ pipeline {
         stage('Artifacts') {
             steps {
                 echo 'Artifacts App'
-		archiveArtifacts artifacts: '**/target/*.jar', followSymlinks: false
+		archiveArtifacts artifacts: '**/target/*.war', followSymlinks: false
             }
         }
 	    
