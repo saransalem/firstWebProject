@@ -14,7 +14,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploy App'
-              deploy adapters: [tomcat9(credentialsId: 'aa4319dc-2133-442c-862c-5ca1585a174f', path: '', url: 'http://192.168.29.108:8080/')], contextPath: null, war: '**/*.war'
+              deploy adapters: [tomcat9(credentialsId: 'aa4319dc-2133-442c-862c-5ca1585a174f', path: '', url: 'http://192.168.29.108:8080/')], contextPath: 'firstWebProject', war: '**/*.war'
 		    }
         }
 		
